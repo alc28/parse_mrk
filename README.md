@@ -1,7 +1,6 @@
 # parse_mrk
-Use R tidyverse to manipulate mrk record output from MarcEdit  
+by Adam Chandler  
+April 2018  
 
-See MarcEdit documentation for instructions on how to convert .mrc marc format to .mrk.
-
-Includes case study: manipulate file with $0 URIs.
+Use R tidyverse to manipulate mrk record output from MarcEdit. See MarcEdit documentation for instructions on how to convert .mrc marc format to .mrk. Includes case study: manipulate file with $0 URIs.
 
