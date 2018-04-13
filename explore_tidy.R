@@ -67,3 +67,7 @@ sum_tidy_marc <- tidy_marc %>%
   summarise(total_dz_in_record = sum(num_dollarzero)) %>%
   arrange( desc(total_dz_in_record)  )
 
+f050 <- tidy_marc %>%
+  filter(mrcfield == '050') %>%
+  mutate(callnumber = str_sub(rawfield, str_locate(rawfield, "\\$")[1] + 2, str_length(rawfield))) %>%
+  arrange(callnumber)
